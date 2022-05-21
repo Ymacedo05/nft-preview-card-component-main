@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 # Frontend Mentor - NFT preview card component E
 =======
-# Frontend Mentor - NFT preview card component D
->>>>>>> 5667f428c8ede37819be03d7f6f6878793c0d499
 
 
 ![Design preview for the NFT preview card component coding challenge](./design/desktop-preview.jpg)
