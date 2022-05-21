@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <style type="text/css" media="all">
+    
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
+    
+   :root{
+      --cor1:rgb(0,255,255);
+      --cor2:darkblue;
+      --cor3:#D5E1EF;
+      --cor4:#2B7DFA;
+    }
+    
+    *{
+      padding: 0px;
+      margin: 0px;
+      box-sizing: border-box;
+    }
+    html,body{
+      font-family: 'Outfit', sem serifa;
+      width: 100%;
+      height: 100%;
+      font-size: 18px;
+      min-height: 600px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color:hsl(215, 51%, 70%) ;
+      
+    }
+    
+    h3{
+       font-size: 1em;
+       font-weight: 400;
+    }
+
+    img{
+      padding-top: 1px;
+      margin-right: 5px;
+    }
+  #cont{
+    width: 100%;
+      height: 100%;
+      min-height: 575px;
+      min-width: 375px;
+      max-width: 1440px;
+      max-height: 800px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: hsl(217, 54%, 11%);
+  }
+    
+    div#caixa{
+      background: hsl(216, 50%, 16%);
+      width: 325px;
+      height: 550px;
+      padding: 25px;
+      display: flex;
+      flex-direction: column;
+      border-radius: 15px;
+    }
+    
+     .p1{
+      background: var(--cor4) url("images/image-equilibrium.jpg") no-repeat;
+      background-size: cover;
+      border-radius: 10px;
+      height: 300px;
+      position: relative;
+      
+    }
+    .p2{
+    padding-top: 20px;
+    font-size: 15px;
+    text-align: left;      
+    }
+    .p2 p{
+      margin-top: 15px;
+      margin-bottom: 15px;
+      color:;
+      text-align: left;
+      font-weight: 300;
+    }
+    .p2 h2{
+      font-size: 1.4em;
+      color: white;
+      font-weight: 600;
+      
+    }
+    
+    div.text{
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 7px;
+      border-bottom: 1px solid hsl(215, 32%, 27%);
+    }
+    .text .min-cont1{
+      width: 120px;
+      height: 40px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    .text .min-cont1 .img{
+      width: 24px;
+      height: 20px;
+      text-align: center;
+    }
+    .text .a1{
+      color: cyan;
+    }
+    
+    div.rodape {
+      padding-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    
+    div.rodape .a1{
+      background: url("images/image-avatar.png");
+      background-size: cover;
+      border: 0.5px solid white;
+      height: 35px;
+      width: 35px;
+      border-radius: 50%;
+      margin-right: 10px;
+      
+    }
+      
+    .p2 h2:hover, span:hover{
+      color: cyan;
+    }
+    
+    .p1::before{
+      --cor1: rgba(0,255,255,0.5);
+
+      content: url("images/icon-view.svg");
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color:var(--cor1) ;
+      position: absolute;
+      inset:0;
+      opacity: 0;
+      transition: all 1s;
+      
+    }
+    .p1:hover::before{
+      opacity: 1;
+    }
+    
+    #caixa:hover{
+      transform: rotateY(360deg);
+      box-shadow: 0px 0px 50px cyan;
+      transition: transform 2s 5s, box-shadow 1s 6s;
+    }
+    </style>
+  </head>
+  <body>
+    
+    <div id="cont">
+      
+      <div id="caixa">
+        
+        <div class="p p1">
+
+        </div>
+
+        <div class="p p2">
+          <h2>
+            Equilibrium #3429
+          </h2>
+          <p>
+             Our Equilibrium collection promotes balance and calm.
+          </p>
+          
+          <div class="text">
+            
+            <div class="min-cont1">
+              <div class="img">
+                <img src="images/icon-ethereum.svg" alt="">
+              </div>
+              <h3 class="a1">0.041ETH</h3>
+            </div>
+            
+            <div class="min-cont1">
+              <div class="img">
+                <img src="images/icon-clock.svg" alt="">
+              </div>
+               <h3 class="a2"> 3 days left</h3>
+            </div>
+          </div>
+          
+          <div class="rodape">
+            <div class="a1">
+              
+              
+            </div>
+            <div class="a2">
+              Creation of <span>Jules Wyvern</span>
+            </div>
+          </div>
+        </div> 
+        
+      </div> <!-- Fim caixa -->
+      
+    </div>  <!-- Fim cont -->
+    
+  
+
+
+</body>
+</html>
